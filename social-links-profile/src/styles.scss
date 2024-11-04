@@ -1,1 +1,324 @@
-/* You can add global styles to this file, and also import other style files */
+// -----------------------------------------------------
+// Global Styles
+// -----------------------------------------------------
+
+// Set the root font-size for easy rem calculations (1 rem = 10px)
+html {
+  font-size: 62.5%; // 62.5% of the default 16px = 10px
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  src: url('assets/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600;
+  src: url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 700;
+  src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype');
+}
+
+// Typography
+$font-family: 'Inter', sans-serif;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Base Font Size
+$font-size-base: 1.4rem; // 14px
+
+// Colors
+$color-green: hsl(75, 94%, 57%);
+$color-white: hsl(0, 0%, 100%);
+$color-grey-700: hsl(0, 0%, 20%);
+$color-grey-800: hsl(0, 0%, 12%);
+$color-grey-900: hsl(0, 0%, 8%);
+
+// Typography Mixins
+@mixin text-preset-1 {
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: 2.4rem; // 24px
+  line-height: 1.5; // 150%
+  letter-spacing: 0;
+}
+
+@mixin text-preset-2 {
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-base; // 14px
+  line-height: 1.5; // 150%
+  letter-spacing: 0;
+}
+
+@mixin text-preset-2-bold {
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-base; // 14px
+  line-height: 1.5; // 150%
+  letter-spacing: 0;
+}
+
+// Layout Breakpoints
+$small-mobile-width: 20rem; // 320px (very small mobile devices)
+$mobile-width: 37.5rem; // 375px
+$tablet-width: 48rem; // 768px (tablet)
+$medium-width: 64rem; // 1024px (medium screens)
+$desktop-width: 144rem; // 1440px (desktop)
+
+// Global resets or default styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  font-weight: $font-weight-regular;
+  line-height: 1.5;
+  color: $color-white;
+  background-color: $color-grey-900;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $font-weight-bold;
+  color: $color-white;
+}
+
+p {
+  color: $color-grey-700;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// -----------------------------------------------------
+// Spacing Variables
+// -----------------------------------------------------
+
+$spacing-xl: 4rem; // 40px
+$spacing-lg: 2.4rem; // 24px
+$spacing-md: 1.6rem; // 16px
+$spacing-sm: 1.2rem; // 12px
+$spacing-xs: 0.8rem; // 8px
+$spacing-xxs: 0.4rem; // 4px
+
+// -----------------------------------------------------
+// Utility Classes for Padding (All Sides)
+// -----------------------------------------------------
+
+.p-xl {
+  padding: $spacing-xl;
+}
+.p-lg {
+  padding: $spacing-lg;
+}
+.p-md {
+  padding: $spacing-md;
+}
+.p-sm {
+  padding: $spacing-sm;
+}
+.p-xs {
+  padding: $spacing-xs;
+}
+.p-xxs {
+  padding: $spacing-xxs;
+}
+
+// Padding directional classes
+.pt-xl {
+  padding-top: $spacing-xl;
+}
+.pb-xl {
+  padding-bottom: $spacing-xl;
+}
+.pl-xl {
+  padding-left: $spacing-xl;
+}
+.pr-xl {
+  padding-right: $spacing-xl;
+}
+
+.pt-lg {
+  padding-top: $spacing-lg;
+}
+.pb-lg {
+  padding-bottom: $spacing-lg;
+}
+.pl-lg {
+  padding-left: $spacing-lg;
+}
+.pr-lg {
+  padding-right: $spacing-lg;
+}
+
+.pt-md {
+  padding-top: $spacing-md;
+}
+.pb-md {
+  padding-bottom: $spacing-md;
+}
+.pl-md {
+  padding-left: $spacing-md;
+}
+.pr-md {
+  padding-right: $spacing-md;
+}
+
+.pt-sm {
+  padding-top: $spacing-sm;
+}
+.pb-sm {
+  padding-bottom: $spacing-sm;
+}
+.pl-sm {
+  padding-left: $spacing-sm;
+}
+.pr-sm {
+  padding-right: $spacing-sm;
+}
+
+.pt-xs {
+  padding-top: $spacing-xs;
+}
+.pb-xs {
+  padding-bottom: $spacing-xs;
+}
+.pl-xs {
+  padding-left: $spacing-xs;
+}
+.pr-xs {
+  padding-right: $spacing-xs;
+}
+
+.pt-xxs {
+  padding-top: $spacing-xxs;
+}
+.pb-xxs {
+  padding-bottom: $spacing-xxs;
+}
+.pl-xxs {
+  padding-left: $spacing-xxs;
+}
+.pr-xxs {
+  padding-right: $spacing-xxs;
+}
+
+// -----------------------------------------------------
+// Utility Classes for Margin (All Sides)
+// -----------------------------------------------------
+
+.m-xl {
+  margin: $spacing-xl;
+}
+.m-lg {
+  margin: $spacing-lg;
+}
+.m-md {
+  margin: $spacing-md;
+}
+.m-sm {
+  margin: $spacing-sm;
+}
+.m-xs {
+  margin: $spacing-xs;
+}
+.m-xxs {
+  margin: $spacing-xxs;
+}
+
+// Margin directional classes
+.mt-xl {
+  margin-top: $spacing-xl;
+}
+.mb-xl {
+  margin-bottom: $spacing-xl;
+}
+.ml-xl {
+  margin-left: $spacing-xl;
+}
+.mr-xl {
+  margin-right: $spacing-xl;
+}
+
+.mt-lg {
+  margin-top: $spacing-lg;
+}
+.mb-lg {
+  margin-bottom: $spacing-lg;
+}
+.ml-lg {
+  margin-left: $spacing-lg;
+}
+.mr-lg {
+  margin-right: $spacing-lg;
+}
+
+.mt-md {
+  margin-top: $spacing-md;
+}
+.mb-md {
+  margin-bottom: $spacing-md;
+}
+.ml-md {
+  margin-left: $spacing-md;
+}
+.mr-md {
+  margin-right: $spacing-md;
+}
+
+.mt-sm {
+  margin-top: $spacing-sm;
+}
+.mb-sm {
+  margin-bottom: $spacing-sm;
+}
+.ml-sm {
+  margin-left: $spacing-sm;
+}
+.mr-sm {
+  margin-right: $spacing-sm;
+}
+
+.mt-xs {
+  margin-top: $spacing-xs;
+}
+.mb-xs {
+  margin-bottom: $spacing-xs;
+}
+.ml-xs {
+  margin-left: $spacing-xs;
+}
+.mr-xs {
+  margin-right: $spacing-xs;
+}
+
+.mt-xxs {
+  margin-top: $spacing-xxs;
+}
+.mb-xxs {
+  margin-bottom: $spacing-xxs;
+}
+.ml-xxs {
+  margin-left: $spacing-xxs;
+}
+.mr-xxs {
+  margin-right: $spacing-xxs;
+}
