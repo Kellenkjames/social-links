@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-links',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './links.component.html',
   styleUrls: ['./links.component.scss'],
 })
-export class LinksComponent {}
+export class LinksComponent {
+  @Input() links: string[] = [];
+}
