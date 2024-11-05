@@ -1,0 +1,15 @@
+@import '../../styles.scss';
+
+.links__list {
+  &__link {
+    background-color: $color-grey-700;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    width: 30.4rem;
+    cursor: pointer;
+
+    &__text {
+      @include text-preset-2-bold;
+    }
+  }
+}

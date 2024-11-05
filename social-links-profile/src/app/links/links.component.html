@@ -1,5 +1,7 @@
 <ul class="links__list">
   @for (link of links; track $index) {
-  <li class="links__list__link">{{ link }}</li>
+  <li class="links__list__link mb-md">
+    <a class="links__list__link__text" href="#" target="_blank">{{ link }}</a>
+  </li>
   }
 </ul>
