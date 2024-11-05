@@ -1,1 +1,5 @@
-<p>links works!</p>
+<ul class="links__list">
+  @for (link of links; track $index) {
+  <li class="links__list__link">{{ link }}</li>
+  }
+</ul>
