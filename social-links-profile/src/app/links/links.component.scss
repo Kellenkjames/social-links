@@ -9,7 +9,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 
-    &__text {
+    & * {
       @include text-preset-2-bold;
     }
 
