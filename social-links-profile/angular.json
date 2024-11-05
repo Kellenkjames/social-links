@@ -17,7 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "https://kellenkjames.github.io/social-links-profile/",
             "outputPath": "dist/social-links-profile",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -83,7 +82,7 @@
               {
                 "glob": "**/*",
                 "input": "src/assets",
-                "output": ""
+                "output": "/assets"
               }
             ],
             "styles": ["src/styles.scss"],
