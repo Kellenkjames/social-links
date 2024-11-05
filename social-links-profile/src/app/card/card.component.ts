@@ -22,7 +22,7 @@ export class CardComponent {
   location: string = 'London, United Kingdom';
   bio: string = 'Front-end developer and avid reader.';
   links: string[] = [
-    'Github',
+    'GitHub',
     'Frontend Mentor',
     'LinkedIn',
     'Twitter',

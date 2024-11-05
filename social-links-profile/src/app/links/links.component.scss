@@ -7,9 +7,19 @@
     border-radius: 0.8rem;
     width: 30.4rem;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 
     &__text {
       @include text-preset-2-bold;
+    }
+
+    &:hover {
+      background-color: $color-green;
+
+      & * {
+        color: $color-grey-900;
+        transition: color 0.3s ease-in-out;
+      }
     }
   }
 }
