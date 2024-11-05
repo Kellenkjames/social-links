@@ -11,4 +11,13 @@
   border-radius: 1.2rem;
   max-width: 38.4rem;
   width: 100%;
+
+  @media (max-width: $mobile-width) {
+    max-width: 32.7rem;
+    padding: 2.4rem;
+  }
+
+  @media (max-width: $small-mobile-width) {
+    max-width: 28rem;
+  }
 }

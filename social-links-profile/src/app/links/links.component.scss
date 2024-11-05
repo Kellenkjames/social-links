@@ -1,11 +1,15 @@
 @import '../../styles.scss';
 
 .links__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 30.4rem;
+
   &__link {
     background-color: $color-grey-700;
     padding: 1.2rem;
     border-radius: 0.8rem;
-    width: 30.4rem;
+    width: 100%;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 
