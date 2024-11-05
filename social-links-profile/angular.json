@@ -83,7 +83,7 @@
               {
                 "glob": "**/*",
                 "input": "src/assets",
-                "output": "/assets"
+                "output": ""
               }
             ],
             "styles": ["src/styles.scss"],
