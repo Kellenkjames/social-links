@@ -15,7 +15,7 @@ This project is part of a series focused on enhancing frontend development skill
 
 Here is a preview of the Social Links Profile Card:
 
-![Social Links Profile Card Screenshot](./social-links-profile/src/assets/final-screenshot.png)
+![Social Links Profile Card Screenshot](./social-links/src/assets/final_screenshot.png)
 
 ## Technologies Used
 
