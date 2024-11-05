@@ -1,0 +1,8 @@
+@import '../../styles.scss';
+
+.bio {
+  &__description {
+    @include text-preset-2;
+    color: $color-white;
+  }
+}

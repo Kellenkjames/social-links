@@ -20,7 +20,7 @@ export class CardComponent {
   imageUrl: string = 'assets/images/avatar-jessica.jpeg';
   name: string = 'Jessica Randall';
   location: string = 'London, United Kingdom';
-  bio: string = 'Front-end developer and avid reader';
+  bio: string = 'Front-end developer and avid reader.';
   links: string[] = [
     'Github',
     'Frontend Mentor',
