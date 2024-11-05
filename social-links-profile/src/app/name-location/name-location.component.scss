@@ -1,0 +1,11 @@
+@import '../../styles.scss';
+
+.name-location {
+  &__name {
+    @include text-preset-1;
+  }
+  &__location {
+    @include text-preset-2-bold;
+    color: $color-green;
+  }
+}
