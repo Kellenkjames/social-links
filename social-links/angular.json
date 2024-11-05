@@ -17,8 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "https://kellenkjames.github.io/social-links-profile/",
-            "outputPath": "dist/social-links-profile",
+            "baseHref": "https://kellenkjames.github.io/social-links/",
+            "outputPath": "dist/social-links",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
