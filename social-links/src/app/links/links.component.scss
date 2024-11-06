@@ -13,14 +13,14 @@
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 
-    & * {
+    & a {
       @include text-preset-2-bold;
     }
 
     &:hover {
       background-color: $color-green;
 
-      & * {
+      & a {
         color: $color-grey-900;
         transition: color 0.3s ease-in-out;
       }
